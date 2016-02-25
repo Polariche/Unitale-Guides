@@ -1,0 +1,42 @@
+- Getting started
+
+(cover UNITALE folder; mainly Mods and Documents)
+
+http://www.sublimetext.com/
+
+
+- New to Lua?
+
+Unitale uses Lua(http://www.lua.org/), which is often used for modding. If you have some coding experience,
+getting into Lua shouldn't be too hard.
+
+Programming knowledge is vital to creating a good Unitale battle. If you haven't programmed anything before,
+I recommend learning the basics. Below are some good sites for doing that.
+
+https://www.codecademy.com/
+https://www.khanacademy.org/computing/computer-programming
+
+
+
+- bullet basics
+
+1. spawning a bullet at (0, 0)
+
+2. MoveTo
+
+3. Update and Move
+
+
+
+- greater dog attack
+
+1. placing the dog at the bottom
+
+2. spawning bullets at certain interval
+(explain frame; 60 frame = 1 second)
+(first-second bullet difference is 3 frame)
+
+3. setting the bullet's direction
+
+4. dog animation
+(belly:  12, 4 frame)
