@@ -34,36 +34,30 @@
 				<tr>
 					<th>Lua/Waves/firstwave.lua</th>
 					<th>Lua/Encounters/encounter.lua</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>
-						<pre><code class="lua">CreateProjectile('bullet', 0, 0)</code></pre>
+						<pre><code class="lua">CreateProjectile('bullet', 0, 0)     </code></pre>
+					</td>
 					<td>
 						<pre><code class="lua">possible_attacks = {"firstwave"}</code></pre>
-					<td>
-				</tr>
-			</tbody>
-		</table>
-
-		<p>The result should look like this:<br>
-		<table class="table table-condensed">
-			<tbody>
-				<tr>
-					<td>
+					</td>
+					<td class="text-right">
 						<img src="images/wave1_1.PNG"></img>	
 					</td>
 				</tr>
 			</tbody>
 		</table>
+
 		<p>The bullet spawned right on top of the player, and thus, <br></p>
 					
 		<table class="table table-condensed">
 			<thead>
 				<tr><th>Lua/Waves/firstwave.lua</th> 
-					<th class="blank"></th>
-					<th>Result</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -72,9 +66,7 @@
 						<pre><code class="lua">bullet = CreateProjectile('bullet', 0, 0)
 bullet.MoveTo(30, 0)</code></pre>	
 					</td>
-					<td>
-					</td>
-					<td>
+					<td class="text-right">
 						<img src="images/wave1_2.PNG"></img>
 					</td>
 				</tr>
@@ -82,12 +74,11 @@ bullet.MoveTo(30, 0)</code></pre>
 		</table>
 
 		<p>it looks kinda boring<br></p>
-		
+
 		<table class="table table-condensed">
 			<thead class="location">
 				<tr><th>Lua/Waves/firstwave.lua</th> 
-					<th class="blank"></th>
-					<th>Result</th>
+					<th></th>
 				</tr>
 			</thead>
 			</thead>
@@ -102,9 +93,7 @@ function Update()
 	bullet.Move(0, 1)
 end</code></pre>		
 					</td>	
-					<td>
-					</td>
-					<td>
+					<td class="text-right">
 						<img src="images/wave1_3.gif"></img>
 					</td>
 				</tr>
