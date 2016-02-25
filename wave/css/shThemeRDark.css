@@ -14,6 +14,15 @@
  * @license
  * Dual licensed under the MIT and GPL licenses.
  */
+ 
+ .chcontainer {
+   margin-left:8px;
+ }
+ 
+ .gutter {
+ display:none;
+ }
+
 .syntaxhighlighter {
   background-color: #1b2426 !important;
 }
@@ -36,6 +45,7 @@
   color: #afafaf !important;
 }
 .syntaxhighlighter .gutter .line {
+  font-family:Menlo,Monaco,Consolas,"Courier New",monospace;
   border-right: 3px solid #435a5f !important;
 }
 .syntaxhighlighter .gutter .line.highlighted {
@@ -74,13 +84,20 @@
   color: #b9bdb6 !important;
 }
 .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
-  color: #878a85 !important;
+  /*color: #878a85 !important;*/
+  color: #4cd628 !important;
+  opacity: 1.0;
+  transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -webkit-transition: opacity .2s linear;
 }
 .syntaxhighlighter .string, .syntaxhighlighter .string a {
-  color: #5ce638 !important;
+  /*color: #5ce638 !important;*/
+  color: #de7536 !important;
 }
 .syntaxhighlighter .keyword {
   color: #5ba1cf !important;
+  margin-right:3px;
 }
 .syntaxhighlighter .preprocessor {
   color: #435a5f !important;
