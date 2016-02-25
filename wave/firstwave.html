@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,10 +12,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>UNITALE Tutorial</title>
 
-	<script type="text/javascript" src="js/shCore.js"></script>
-	<script type="text/javascript" src="js/shBrushJScript.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<link rel="stylesheet" href="css/monokai-sublime.css">
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,61 +26,86 @@
   <body>
     <div class="main">
 		<h2>Creating your first wave</h2>
-		<p class="lead">How to move ur boollets</p>
+		<br>
+		<p>To make your wave actually appear in your encounter, you must asdfadsfafdsafdsafdsasdfafdasdsadf </p>
 
-		<table class="table">
+		<table class="table table-condensed">
 			<thead>
-				<tr>Lua/Waves/firstwave.lua</tr>
+				<tr>
+					<th>Lua/Waves/firstwave.lua</th>
+					<th>Lua/Encounters/encounter.lua</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>
-						<pre class="brush: js;">
-CreateProjectile('bullet', 0, 0)</pre>
+						<pre><code class="lua">CreateProjectile('bullet', 0, 0)</code></pre>
 					<td>
-						<img src="images/wave1_dog.gif"></img>
+						<pre><code class="lua">possible_attacks = {"firstwave"}</code></pre>
+					<td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>The result should look like this:<br>
+		<table class="table table-condensed">
+			<tbody>
+				<tr>
+					<td>
+						<img src="images/wave1_1.png"></img>	
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>The bullet spawned right on top of the player, and thus, <br></p>
+					
+		<table class="table table-condensed">
+			<thead>
+				<tr><th>Lua/Waves/firstwave.lua</th> 
+					<th class="blank"></th>
+					<th>Result</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<pre><code class="lua">bullet = CreateProjectile('bullet', 0, 0)
+bullet.MoveTo(30, 0)</code></pre>	
+					</td>
+					<td>
+					</td>
+					<td>
+						<img src="images/wave1_2.png"></img>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 
-		<table class="table">
+		<p>it looks kinda boring<br></p>
+		
+		<table class="table table-condensed">
 			<thead class="location">
-				<tr>Lua/Waves/firstwave.lua</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<pre class="brush: js;">
-bullet = CreateProjectile('bullet', 0, 0)
-bullet.MoveTo(30, 0)</pre>	
-					</td>
-					<td>
-						
-					</td>
+				<tr><th>Lua/Waves/firstwave.lua</th> 
+					<th class="blank"></th>
+					<th>Result</th>
 				</tr>
-			</tbody>
-		</table>
-
-
-		<table class="table">
-			<thead class="location">
-				<tr>Lua/Waves/firstwave.lua</tr>
+			</thead>
 			</thead>
 			<tbody>
 				<tr>
 					<td>
-						<pre class="brush: js;">
-bullet = CreateProjectile('bullet', 0, 0)
-bullet.MoveTo(30, 0)
+						<pre><code class="lua">bullet = CreateProjectile('bullet', 0, 0)
+bullet.MoveTo(30, 0)                            
 
 
 function Update()
-bullet.Move(0, 1)
-end</pre>			
+	bullet.Move(0, 1)
+end</code></pre>		
+					</td>	
+					<td>
 					</td>
 					<td>
-						
+						<img src="images/wave1_3.gif"></img>
 					</td>
 				</tr>
 			</tbody>
