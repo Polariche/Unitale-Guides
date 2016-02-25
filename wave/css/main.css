@@ -1,7 +1,8 @@
 @font-face {
 	font-family: Determination; 
-	src: url('fonts/DeterminationMonoWeb.woff');
+	src: url('../fonts/DeterminationMonoWeb.woff');
 } 
+
 html {
 	display: table;
 	margin: auto;
